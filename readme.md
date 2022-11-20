@@ -28,7 +28,7 @@ const [value, setValue] = useLocalStorage('keyname', false);
 
 ## useMouseOverDelay
 
-Improves mouseenter/mouseleave interactions by using a delay. Helpful to prevent unwanted opening/closing of menus and such as soon as the mouse enters/leaves the boundary. Great for user experience.
+Improves mouseenter/mouseleave interactions by using a delay. Helpful to prevent unwanted opening/closing of menus and such as soon as the mouse enters/leaves the element. Great for user experience.
 
 ```js
 const [delayMouseEnter, delayMouseLeave] = useMouseOverDelay(250);
