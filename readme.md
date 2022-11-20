@@ -80,7 +80,7 @@ return (
 
 ##  usePosition
 
-Returns the geolocation data of the user. The service needs to be enabled at first render or after a user prompt.
+Returns the geolocation data of the user. The service needs to be enabled (initial render or after a user prompt).
 
 ### Watcher mode
 
@@ -100,7 +100,7 @@ Refer to https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrent
 const { position, error, enableService } = usePosition(true);
 
 useEffect(function() {
-    // Ask the browser to enable the geolocation service on component render.
+    // Ask the browser to enable the geolocation service on initial render.
     enableService();
 }, []);
 
@@ -170,7 +170,7 @@ const {
 const [failed, setFailed] = useState(false);
 
 useEffect(function() {
-    // start stopwatch on component first render.
+    // start stopwatch on initial render.
     start();
 }, []);
 
